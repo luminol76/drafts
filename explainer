@@ -1,4 +1,4 @@
-#### pbcs_rep_generator.ipynb
+#### 1_pbcs_rep_generator.ipynb
 
 # A draft folder including molecular descriptors. 
 # The task is to create physically informed descriptors for machine learning models to predict thermodynamic properties of molecular dynamics simulation data. 
@@ -7,9 +7,18 @@
 
 # Created using Google colab.
 
-#### yukawa_rep_generator_L1.ipynb
+#### 2_yukawa_rep_generator_L1.ipynb
 
 # A draft for Yukawa representation that calculates Yukawa potential with screening term instead of original 3-body term in SLATM representation.
+
+# Created using Google colab.
+
+#### 3_iso_curves_ipynb
+
+# This rather long notebook is an unorganized representation of the step where I have tried to gather data and prediction.
+# Getting isotherm and isobars from the many simulation data and drawing to curves to see if they fit theory's predictions are combined with 
+# machine learning model predictions that use Yukawa descriptor instead of SLATM.
+# Although simple in final result, organizing ana analyzing the workflow took some time.
 
 # Created using Google colab.
 
