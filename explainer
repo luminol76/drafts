@@ -22,3 +22,11 @@
 
 # Created using Google colab.
 
+#### 4_updated_models_compared.ipynb
+
+# This is where the predicted properties come from. Here, original SLATM, periodic boundary conditions SLATM and Yukawa SLATM are compared to each other.
+# The learning coming from these descriptors led me to work on hyperparameters introduced in Yukawa and test them to see if they somehow overfit or 
+# perform better than the original representations, hopefully showing a physically relevant aspect that connects these representations to simulations, and then to the theory.
+
+# Created using Google colab.
+
