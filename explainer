@@ -1,32 +1,51 @@
-#### 1_pbcs_rep_generator.ipynb
+# MSc Thesis Notebooks - Liquid Theory Descriptors for ML
 
-# A draft folder including molecular descriptors. 
-# The task is to create physically informed descriptors for machine learning models to predict thermodynamic properties of molecular dynamics simulation data. 
-# The starting reference is SLATM representation. These doodles are one of the first steps including 
-# translating Fortran code to Python and implementing periodic boundary conditions to consider simulations batter.
+Draft notebooks from my master's thesis on physically informed molecular descriptors for predicting thermodynamic properties from molecular dynamics simulations.
 
-# Created using Google colab.
+## Context
+These notebooks document the development of descriptors that bridge molecular simulations with interpretable thermodynamic predictions. 
+The work started from SLATM representation and evolved toward Yukawa-based descriptors with physically motivated screening terms.
 
-#### 2_yukawa_rep_generator_L1.ipynb
+**Note:** These are working drafts created during research, not polished code. They show the exploration process—testing ideas, comparing approaches, and iterating on implementations.
 
-# A draft for Yukawa representation that calculates Yukawa potential with screening term instead of original 3-body term in SLATM representation.
+---
 
-# Created using Google colab.
+## Notebooks
 
-#### 3_iso_curves.ipynb
+### 1. `pbcs_rep_generator.ipynb`
+**Periodic Boundary Conditions for SLATM**
 
-# This rather long notebook is an unorganized representation of the step where I have tried to gather data and prediction.
-# Getting isotherm and isobars from the many simulation data and drawing to curves to see if they fit theory's predictions are combined with 
-# machine learning model predictions that use Yukawa descriptor instead of SLATM.
-# Although simple in final result, organizing ana analyzing the workflow took some time.
+Implements SLATM (Spectrum of London and Axilrod-Teller-Muto) representation with periodic boundary conditions. 
+This involved translating parts of the original Fortran implementation to Python and adapting it for MD simulation data.
 
-# Created using Google colab.
+### 2. `yukawa_rep_generator_L1.ipynb`
+**Yukawa Descriptor Development**
 
-#### 4_updated_models_compared.ipynb
+Explores Yukawa potential with screening term as an alternative to the original 3-body term in SLATM. 
+The goal was to create a physically motivated descriptor that better captures liquid-like environments.
 
-# This is where the predicted properties come from. Here, original SLATM, periodic boundary conditions SLATM and Yukawa SLATM are compared to each other.
-# The learning coming from these descriptors led me to work on hyperparameters introduced in Yukawa and test them to see if they somehow overfit or 
-# perform better than the original representations, hopefully showing a physically relevant aspect that connects these representations to simulations, and then to the theory.
+### 3. `iso_curves.ipynb`
+**Data Analysis: Isotherms and Isobars**
 
-# Created using Google colab.
+Combines simulation data processing with ML predictions.
+Extracts isotherms and isobars from simulation outputs and compares them against theoretical predictions.
+Tests Yukawa descriptors against SLATM variants.
 
+### 4. `updated_models_compared.ipynb`
+**Descriptor Comparison and Hyperparameter Testing**
+
+Compares three descriptor variants:
+- Original SLATM
+- SLATM with periodic boundary conditions
+- Yukawa-based SLATM
+
+Tests hyperparameters introduced in the Yukawa approach to identify physically relevant features that connect representations to underlying theory.
+
+---
+
+## Tools & Methods
+- Python (NumPy, SciPy, Pandas, Matplotlib)
+- Scikit-learn for ML models
+- Molecular dynamics simulation analysis
+
+All notebooks created using Google Colab.
