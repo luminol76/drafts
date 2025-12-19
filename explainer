@@ -13,7 +13,7 @@
 
 # Created using Google colab.
 
-#### 3_iso_curves_ipynb
+#### 3_iso_curves.ipynb
 
 # This rather long notebook is an unorganized representation of the step where I have tried to gather data and prediction.
 # Getting isotherm and isobars from the many simulation data and drawing to curves to see if they fit theory's predictions are combined with 
