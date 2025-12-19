@@ -1,0 +1,6 @@
+# A draft folder including molecular descriptors. 
+# The task is to create physically informed descriptors for machine learning models to predict thermodynamic properties of molecular dynamics simulation data. 
+# The starting reference is SLATM representation. These doodles are one of the first steps including 
+# translating Fortran code to Python and implementing periodic boundary conditions to consider simulations batter.
+
+# Created using Google colab.
